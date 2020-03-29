@@ -40,7 +40,7 @@ int** threeSum(int* nums, int numsSize, int* returnSize, int** returnColumnSizes
             if(0 == (nums[low] + nums[high] + nums[cur]))
             {
                 returnArray[*returnSize] = (int*)malloc(sizeof(int) * 3); // 每次找到一组，二级指针就分配三个空间
-                (*returnColumnSizes)[*returnSize] = 3; // 记录列数，非常骚而吊诡的操作
+                (*returnColumnSizes)[*returnSize] = 3; // 记录列数
                 returnArray[*returnSize][0] = nums[cur];
                 returnArray[*returnSize][1] = nums[low];
                 returnArray[*returnSize][2] = nums[high];
