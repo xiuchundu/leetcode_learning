@@ -17,7 +17,7 @@ struct ListNode* swapPairs(struct ListNode* head){
     }
 
     while(p){
-        if(index % 2 == 0 && p->next){
+        if(index%2 == 0 && p->next){
             first[index+1] = p->val;
         } else if(index % 2 == 0 && p->next == NULL){
             first[index] = p->val;
