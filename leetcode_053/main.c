@@ -7,7 +7,7 @@ int maxSubArray(int* nums, int numsSize){
     int *dp = NULL;
 
     dp = malloc(sizeof(int) * numsSize);
-    dp[0] = nums[0];
+    dp[0] = nums[0]; //赋初值
     result = dp[0];
     for(i=1; i<numsSize; i++){
         dp[i] = max(dp[i-1] + nums[i], nums[i]);
