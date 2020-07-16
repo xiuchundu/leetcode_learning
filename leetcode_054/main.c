@@ -7,17 +7,17 @@ int min(int a, int b){
 }
 
 int* spiralOrder(int** matrix, int matrixSize, int* matrixColSize, int* returnSize){
-    int i = 0, j, index=0;
+    int i = 0, j, index=0，m ,n, loop, *res;
 
     if (matrix == NULL || matrixSize == 0 || (matrixColSize == NULL) || (*matrixColSize == 0) || (returnSize == NULL)) {
         *returnSize = 0;
         return NULL;
     }
 
-    int m = matrixSize;
-    int n = matrixColSize[0];
-    int loop = (min(m, n) + 1) / 2;
-    int *res = malloc(sizeof(int) * m * n);
+    m = matrixSize;
+    n = matrixColSize[0];
+    loop = (min(m, n) + 1) / 2;
+    res = malloc(sizeof(int) * m * n);
 
     while(i<loop){
         for (j = i; j < n-i; j++) {
