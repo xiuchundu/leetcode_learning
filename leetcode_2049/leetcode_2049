@@ -1,7 +1,8 @@
 class Solution {
     int n, ans = 0;
     long maxScore = 0;
-    int[] L, R;
+    int[] L;
+    int[] R;
 
     public int countHighestScoreNodes(int[] parents) {
         n = parents.length;
