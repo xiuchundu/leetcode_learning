@@ -1,5 +1,6 @@
 class Solution {
-    int n, ans = 0;
+    int n = 0;
+    int ans = 0;
     long maxScore = 0;
     int[] L;
     int[] R;
