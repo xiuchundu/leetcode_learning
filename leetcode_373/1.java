@@ -43,7 +43,6 @@ class Solution {
         }
 
         return res;
-
     }
 
     public static class cmp implements Comparable<cmp> {
@@ -69,7 +68,6 @@ class Solution {
         }
 
         int x;
-
         int y;
 
         @Override
