@@ -62,7 +62,7 @@ public int numBigList(int[] cal, int size, int num) {
         return result;
     }
 
-// 进一步优化，上述解法使用了优先级队列，但仍然会超时。使用Treemap进行优化。从堆(优先级队列)中删除一个元素的时间复杂度为o(N),
+// 进一步优化，上述解法使用了优先级队列，底层实现是堆，add的时间复杂度是O(log(n))，remove的时间复杂度为O(N)，结果会超时。使用Treemap进行优化。
 // 而TreeMap 则是基于红黑树的一种提供顺序访问的 Map,和 HashMap 不同,它的 get、put、remove 之类操作都是 O(log(n))的时间复杂度。
     public int numBigList(int[] cal, int size, int num) {
         int left = 0;
