@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Main {
     /**
-     * 待实现函数copyDir，在此函数中填入答题代码
+     * 待实现函数copyDir
      *
      * @param targetDir 输入的文件夹信息（字符串数组）
      * @param dstDirLine 复制的目的文件夹在targetDir中的位置，即复制的目的文件夹为targetDir[dstDirLine - 1]
